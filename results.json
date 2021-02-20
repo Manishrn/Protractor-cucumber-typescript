@@ -1,0 +1,72 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "feature-name;login-check",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "login check",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User lanches application",
+            "match": {
+              "location": "stepdefinitions\\login_stepdefinition.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7453000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User start to crate a new schedule",
+            "match": {
+              "location": "stepdefinitions\\login_stepdefinition.ts:17"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 40000000,
+              "error_message": "InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.\n  (Session info: headless chrome=88.0.4324.182)\n  (Driver info: chromedriver=88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}),platform=Windows NT 10.0.19042 x86_64)\n    at Object.checkLegacyResponse (C:\\Manish\\Personal\\ProtractorFramework\\ProCuType\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Manish\\Personal\\ProtractorFramework\\ProCuType\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at doSend.then.response (C:\\Manish\\Personal\\ProtractorFramework\\ProCuType\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error: \n    at ElementArrayFinder.applyAction_ (C:\\Manish\\Personal\\ProtractorFramework\\ProCuType\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as click] (C:\\Manish\\Personal\\ProtractorFramework\\ProCuType\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as click] (C:\\Manish\\Personal\\ProtractorFramework\\ProCuType\\node_modules\\protractor\\built\\element.js:831:22)\n    at LoginPage.clickBtn (C:\\Manish\\Personal\\ProtractorFramework\\ProCuType\\pageobjects\\login-page.ts:19:26)\n    at World.cucumber_1.When (C:\\Manish\\Personal\\ProtractorFramework\\ProCuType\\stepdefinitions\\login_stepdefinition.ts:21:17)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FirstTest",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "feature-name",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Feature name",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
